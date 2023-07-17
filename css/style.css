@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -5,5 +7,97 @@
 }
 
 body {
-  background: red;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  border-radius: 10px;
+}
+
+.login-header {
+  margin-bottom: 50px;
+}
+
+.login-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 150px;
+  background-color: white;
+}
+
+.login-right {
+  display: flex;
+  justify-content: center;
+}
+
+.login-right-img {
+  max-height: 100vh;
+  width: 100%;
+}
+
+.login-form {
+  width: 450px;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+p {
+  opacity: 0.7;
+}
+
+.login-form-content {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.position label:not(.checkboxLabel) {
+  display: inline-block;
+  background: white;
+  margin-bottom: 10px;
+  position: absolute;
+  padding: 0 10px;
+  transform: translate(30px, -10px);
+  font-size: 14px;
+  z-index: 2;
+}
+
+input[type="email"],
+input[type="password"] {
+  border: 1px solid black;
+  height: 55px;
+  padding: 0 2rem;
+  width: 100%;
+  outline: none;
+  font-size: 18px;
+  opacity: 0.6;
+  border-radius: 100px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  accent-color: #3f51b5;
+}
+
+button {
+  border: none;
+  background: #3f51b5;
+  color: white;
+  padding: 1rem;
+  border-radius: 24px;
+  font-size: 18px;
 }

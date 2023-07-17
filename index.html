@@ -7,7 +7,38 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Login html css js</h1>
+    <div class="container">
+      <div class="login-left">
+        <div class="login-header">
+          <h1>Welcome to our Appliction</h1>
+          <p>Please logi and use the application</p>
+        </div>
+        <form class="login-form">
+          <div class="login-form-content">
+            <div class="form-item position">
+              <label for="email">Enter Email</label>
+              <input type="email" name="email" id="email" />
+            </div>
+            <div class="form-item position">
+              <label for="password">Enter Password</label>
+              <input type="password" name="password" id="password" />
+            </div>
+            <div class="form-item">
+              <div class="checkbox">
+                <input type="checkbox" id="rememberMeCheckbox" />
+                <label for="rememberMeCheckbox" id="checkboxLabel"
+                  >Remember me</label
+                >
+              </div>
+            </div>
+            <button type="submit">Sign In</button>
+          </div>
+        </form>
+      </div>
+      <div class="login-right">
+        <img class="login-right-img" src="img/loginRightImg.jpg" alt="Image" />
+      </div>
+    </div>
     <script src="js/main.js"></script>
   </body>
 </html>
